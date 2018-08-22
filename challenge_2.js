@@ -13,7 +13,7 @@
    return num;
  }
 
- console.groupCollapsed('Challenge 2');
+ console.groupCollapsed('Challenge 2 - firstFactorial');
  console.log(firstFactorial(1));
  console.log(firstFactorial(2));
  console.log(firstFactorial(3));

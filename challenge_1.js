@@ -9,7 +9,7 @@
 
 const longestWord = sen => sen.split(' ').reduce((wordOne, wordTwo) => (wordOne || '').match(/\w/g).length >= (wordTwo || '').match(/\w/g).length ? wordOne : wordTwo);
 
-console.groupCollapsed('Challenge 1');
+console.groupCollapsed('Challenge 1 - longestWord');
 console.log(longestWord('Some, string here'));
 console.log(longestWord('fun&!! longer one'));
 console.groupEnd();

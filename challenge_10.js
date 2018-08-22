@@ -6,7 +6,7 @@
 
 const alphabetSoup = (str) => str.split('').sort((letter1, letter2) => letter1 < letter2 ? -1 : 1).join('');
 
-console.groupCollapsed('Challenge 10');
+console.groupCollapsed('Challenge 10 - alphabetSoup');
 console.log(alphabetSoup('hello'), alphabetSoup('hello') === 'ehllo');
 console.log(alphabetSoup('coderbyte'), alphabetSoup('coderbyte') === 'bcdeeorty');
 console.log(alphabetSoup('hooplah'), alphabetSoup('hooplah') === 'ahhloop');

@@ -13,7 +13,7 @@
    return res;
  }
 
- console.groupCollapsed('Challenge 5');
+ console.groupCollapsed('Challenge 5 - simpleAdding');
  console.log(simpleAdding(4));
  console.log(simpleAdding(5));
  console.groupEnd();

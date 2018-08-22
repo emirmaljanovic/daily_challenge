@@ -21,7 +21,7 @@ const simpleSymbols = (str) => {
   return 'true';
 }
 
-console.groupCollapsed('Challenge 7');
+console.groupCollapsed('Challenge 7 - simpleSymbols');
 console.log(simpleSymbols('++d+=====d=+S+'));
 console.log(simpleSymbols('+d+=3=+s+'));
 console.log(simpleSymbols('f++d+'));

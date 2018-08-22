@@ -6,7 +6,7 @@
 
 const checkNums = (num1, num2) => num1 < num2 ? 'true' : num1 === num2 ? '-1' : 'false';
 
-console.groupCollapsed('Challenge 8');
+console.groupCollapsed('Challenge 8 - checkNums');
 console.log(checkNums(3, 122));
 console.log(checkNums(67, 67));
 console.log(checkNums(15, 7));

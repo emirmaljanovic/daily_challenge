@@ -13,7 +13,7 @@ const chessboardTraveling = str => {
 
   if (x === a || y === b) { return; 0 }
 
-  const firstFactorial = num => {
+  const getFactorial = num => {
     for (let i = num; i > 1; i--) {
       num = num * (i - 1);
     }
@@ -23,16 +23,16 @@ const chessboardTraveling = str => {
 
   // n! / k!(n-k!)
 
-  const maxMoves = (a - x) + (b - y);
+  const maxMovesX = a - x;
+  const maxMovesY = b - y;
 
-  console.log({ maxMoves });
-
-  return firstFactorial(maxMoves) / ((maxMoves / 2) * (maxMoves / 2));
+  return getFactorial(maxMovesX + maxMovesY) / (getFactorial(maxMovesX) * getFactorial(maxMovesY));
   
 }
 
-console.group('Challenge 12 - chessboardTraveling');
-console.log(chessboardTraveling('(1 1)(2 2)'));
-console.log(chessboardTraveling('(1 1)(3 3)'));
-console.log(chessboardTraveling('(2 2)(4 3)'));
+console.groupCollapsed('Challenge 12 - chessboardTraveling');
+console.log(chessboardTraveling('(1 1)(2 2)'), chessboardTraveling('(1 1)(2 2)') === 2);
+console.log(chessboardTraveling('(1 1)(3 3)'), chessboardTraveling('(1 1)(3 3)') === 6);
+console.log(chessboardTraveling('(2 2)(4 3)'), chessboardTraveling('(2 2)(4 3)') === 3);
+console.log(chessboardTraveling('(1 1)(8 8)'), chessboardTraveling('(1 1)(8 8)') === 3432);
 console.groupEnd();

@@ -14,9 +14,8 @@
  * You can assume the input will not be empty. 
  */
  
-const flattenDeep = arr1 => {
-  return arr1.reduce((acc, val) => Array.isArray(val) ? acc.concat(flattenDeep(val)) : acc.concat(val), []);
-};
+const flattenDeep = arr1 =>
+  arr1.reduce((acc, val) => Array.isArray(val) ? acc.concat(flattenDeep(val)) : acc.concat(val), []);
 
 const createEmptySubMatrix = matrix => {
   const subMatrix = new Array(matrix.length + 1);
@@ -32,8 +31,8 @@ const maximalSquare = (...args) => {
   const matrix = args.map(item => item.split(''));
   const subMatrix = createEmptySubMatrix(matrix);
 
-  for(let i = 0; i < matrix.length - 1; i++) {
-   for(let j = 0; j < matrix[i].length - 1; j++) {
+  for(let i = 0; i <= matrix.length - 1; i++) {
+   for(let j = 0; j <= matrix[i].length - 1; j++) {
      if (matrix[i][j] === '0') {
        subMatrix[i + 1][j + 1] = 0;
      } else {
@@ -44,15 +43,11 @@ const maximalSquare = (...args) => {
        if (prev !== undefined && diagonal !== undefined && top !== undefined) {
          const newVal = Math.min(prev, diagonal, top) + 1;
 
-         console.log({ prev, diagonal, top });
-
          subMatrix[i + 1][j + 1] = newVal;
        }
      }
    }
   }
-
-  console.log(subMatrix);
 
   const maxMatrix = Math.max(...flattenDeep(subMatrix));
   

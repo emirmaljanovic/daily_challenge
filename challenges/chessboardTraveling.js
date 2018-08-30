@@ -1,3 +1,5 @@
+import firstFactorial from './firstFactorial';
+
 /**
  * Challenge
  * Using the JavaScript language, have the function ChessboardTraveling(str) read str which will be a string consisting of the location of a space on a standard 8x8 chess board with no 
@@ -13,26 +15,13 @@ const chessboardTraveling = str => {
 
   if (x === a || y === b) { return; 0 }
 
-  const getFactorial = num => {
-    for (let i = num; i > 1; i--) {
-      num = num * (i - 1);
-    }
- 
-    return num;
-  }
-
   // n! / k!(n-k!)
 
   const maxMovesX = a - x;
   const maxMovesY = b - y;
 
-  return getFactorial(maxMovesX + maxMovesY) / (getFactorial(maxMovesX) * getFactorial(maxMovesY));
+  return firstFactorial(maxMovesX + maxMovesY) / (firstFactorial(maxMovesX) * firstFactorial(maxMovesY));
   
 }
 
-console.groupCollapsed('Challenge 12 - chessboardTraveling');
-console.log(chessboardTraveling('(1 1)(2 2)'), chessboardTraveling('(1 1)(2 2)') === 2);
-console.log(chessboardTraveling('(1 1)(3 3)'), chessboardTraveling('(1 1)(3 3)') === 6);
-console.log(chessboardTraveling('(2 2)(4 3)'), chessboardTraveling('(2 2)(4 3)') === 3);
-console.log(chessboardTraveling('(1 1)(8 8)'), chessboardTraveling('(1 1)(8 8)') === 3432);
-console.groupEnd();
+export default chessboardTraveling;

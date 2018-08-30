@@ -22,8 +22,4 @@ const kaprekarsConstant = (num) => {
   return counter;
 }
 
-console.groupCollapsed('Challenge 11 - kaprekarsConstant');
-console.log(kaprekarsConstant(2111), kaprekarsConstant(2111) === 5);
-console.log(kaprekarsConstant(9831), kaprekarsConstant(9831) === 7);
-console.log(kaprekarsConstant(52), kaprekarsConstant(52) === 6);
-console.groupEnd();
+export default kaprekarsConstant;

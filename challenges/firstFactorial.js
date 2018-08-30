@@ -13,10 +13,4 @@
    return num;
  }
 
- console.groupCollapsed('Challenge 2 - firstFactorial');
- console.log(firstFactorial(1));
- console.log(firstFactorial(2));
- console.log(firstFactorial(3));
- console.log(firstFactorial(4));
- console.log(firstFactorial(8));
- console.groupEnd();
+export default firstFactorial;

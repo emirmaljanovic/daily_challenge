@@ -34,11 +34,4 @@ const pentagonalNumber = num => {
   return before + getNumberOfDots(num);
 };
 
-console.group('Challenge 14 - PentagonalNumber');
-console.log(pentagonalNumber(1), pentagonalNumber(1) === 1);
-console.log(pentagonalNumber(2), pentagonalNumber(2) === 6);
-console.log(pentagonalNumber(3), pentagonalNumber(3) === 16);
-console.log(pentagonalNumber(4), pentagonalNumber(4) === 31);
-console.log(pentagonalNumber(5), pentagonalNumber(5) === 51);
-console.log(pentagonalNumber(6), pentagonalNumber(6) === 76);
-console.groupEnd();
+export default pentagonalNumber;

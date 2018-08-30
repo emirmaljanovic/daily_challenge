@@ -62,8 +62,4 @@ const maximalSquare = (...args) => {
   return Math.pow(maxMatrix, 2);
 };
 
-console.groupCollapsed('Challenge 13 - maximalSquare');
-console.log(maximalSquare('10100', '10111', '11111', '10010'), maximalSquare('10100', '10111', '11111', '10010') === 4);
-console.log(maximalSquare('0111', '1111', '1111', '1111'), maximalSquare('0111', '1111', '1111', '1111') === 9);
-console.log(maximalSquare('0111', '1101', '0111'), maximalSquare('0111', '1101', '0111') === 1);
-console.groupEnd();
+export default maximalSquare;

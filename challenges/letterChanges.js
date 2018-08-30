@@ -15,9 +15,4 @@ const letterChanges = (str) => str.split('').map(character => {
   }
 }).join('');
 
-console.groupCollapsed('Challenge 4 - letterChanges');
-console.log(letterChanges('abcd'));
-console.log(letterChanges('hello'));
-console.log(letterChanges('hello*3'));
-console.log(letterChanges('fun times!'));
-console.groupEnd();
+export default letterChanges;

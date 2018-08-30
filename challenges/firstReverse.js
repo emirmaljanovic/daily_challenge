@@ -7,7 +7,4 @@
 
  const firstReverse = (str) => str.split('').reverse().join('');
 
- console.groupCollapsed('Challenge 3 - firstReverse');
- console.log(firstReverse('hello'));
- console.log(firstReverse('Hello World and Coders'));
- console.groupEnd();
+export default firstReverse;

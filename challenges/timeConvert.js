@@ -6,9 +6,4 @@
 
 const timeConvert = (num) => `${Math.floor(num / 60)}:${num % 60}`;
 
-console.groupCollapsed('Challenge 9 - timeConvert');
-console.log(timeConvert(63));
-console.log(timeConvert(126));
-console.log(timeConvert(520));
-console.log(timeConvert(1440));
-console.groupEnd();
+export default timeConvert;

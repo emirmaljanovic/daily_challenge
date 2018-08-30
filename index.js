@@ -13,6 +13,33 @@ import pentagonalNumber from './challenges/pentagonalNumber';
 import kaprekarsConstant from './challenges/kaprekarsConstant';
 import chessboardTraveling from './challenges/chessboardTraveling';
 
+import challenges from './challenges.json';
+
+const mainWrapper = document.querySelector('.main-wrapper');
+
+const generateChallenges = () => {
+  challenges.forEach(({ title, description }) => {
+    const challengeDOM = document.createElement('div');
+    const challengeTitleDOM = document.createElement('span');
+    const challengeDescriptionDOM = document.createElement('p');
+    
+    challengeDOM.className = 'challenge';
+    challengeTitleDOM.className = 'title';
+    challengeTitleDOM.innerText = title;
+    challengeDescriptionDOM.innerText = description;
+
+    challengeDOM.appendChild(challengeTitleDOM);
+    challengeDOM.appendChild(challengeDescriptionDOM);
+
+    mainWrapper.appendChild(challengeDOM);
+  });
+};
+
+mainWrapper.innerHTML = '';
+generateChallenges();
+
+
+
 console.groupCollapsed('Challenge 1 - longestWord');
 console.log(longestWord('Some, string here'));
 console.log(longestWord('fun&!! longer one'));

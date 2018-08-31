@@ -52,3 +52,20 @@ body {
     background-color: #656565;
   }
 }
+
+@media only screen and (max-width: 1024px) {
+
+  .main-wrapper {
+    justify-content: center;
+  }
+
+  .challenge {
+    flex-basis: 38%;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .challenge {
+    flex-basis: 100%;
+  }
+}

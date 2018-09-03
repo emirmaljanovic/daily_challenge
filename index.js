@@ -15,7 +15,7 @@ import chessboardTraveling from './challenges/chessboardTraveling';
 
 import challenges from './challenges.json';
 
-const mainWrapper = document.querySelector('.main-wrapper');
+const challengesWrapper = document.querySelector('.challenges');
 
 const generateChallenges = () => {
   challenges.forEach(({ title, description }) => {
@@ -31,11 +31,11 @@ const generateChallenges = () => {
     challengeDOM.appendChild(challengeTitleDOM);
     challengeDOM.appendChild(challengeDescriptionDOM);
 
-    mainWrapper.appendChild(challengeDOM);
+    challengesWrapper.appendChild(challengeDOM);
   });
 };
 
-mainWrapper.innerHTML = '';
+challengesWrapper.innerHTML = '';
 generateChallenges();
 
 

@@ -54,5 +54,9 @@
   {
     "title": "Challenge 14 - pentagonalNumber",
     "description": "Have the function PentagonalNumber(num) read num which will be a positive integer and determine how many dots exist in a pentagonal shape around a center dot on the Nth iteration. For example, in the image below you can see that on the first iteration there is only a single dot, on the second iteration there are 6 dots, on the third there are 16 dots, and on the fourth there are 31 dots. \n\n Your program should return the number of dots that exist in the whole pentagon on the Nth iteration. "
+  },
+  {
+    "title": "Challenge 15 - sumInArray",
+    "description": "Given a list of numbers and a number k, return whether any two numbers from the list add up to k. For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17. Bonus: Can you do this in one pass?"
   }
 ]

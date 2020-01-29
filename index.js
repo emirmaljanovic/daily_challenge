@@ -12,6 +12,7 @@ import letterCapitalize from './challenges/letterCapitalize';
 import pentagonalNumber from './challenges/pentagonalNumber';
 import kaprekarsConstant from './challenges/kaprekarsConstant';
 import chessboardTraveling from './challenges/chessboardTraveling';
+import sumInArray from './challenges/sumInArray';
 
 import challenges from './challenges.json';
 
@@ -37,8 +38,6 @@ const generateChallenges = () => {
 
 challengesWrapper.innerHTML = '';
 generateChallenges();
-
-
 
 console.groupCollapsed('Challenge 1 - longestWord');
 console.log(longestWord('Some, string here'));
@@ -127,4 +126,9 @@ console.log(pentagonalNumber(3), pentagonalNumber(3) === 16);
 console.log(pentagonalNumber(4), pentagonalNumber(4) === 31);
 console.log(pentagonalNumber(5), pentagonalNumber(5) === 51);
 console.log(pentagonalNumber(6), pentagonalNumber(6) === 76);
+console.groupEnd();
+
+console.groupCollapsed('Challenge 15 - SumInArray');
+console.log(sumInArray([10, 15, 3, 7], 13));
+console.log(sumInArray([10, 15, 3, 7], 20));
 console.groupEnd();

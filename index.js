@@ -13,6 +13,7 @@ import pentagonalNumber from './challenges/pentagonalNumber';
 import kaprekarsConstant from './challenges/kaprekarsConstant';
 import chessboardTraveling from './challenges/chessboardTraveling';
 import sumInArray from './challenges/sumInArray';
+import productArray from './challenges/productArray';
 
 import challenges from './challenges.json';
 
@@ -131,4 +132,9 @@ console.groupEnd();
 console.groupCollapsed('Challenge 15 - SumInArray');
 console.log(sumInArray([10, 15, 3, 7], 13));
 console.log(sumInArray([10, 15, 3, 7], 20));
+console.groupEnd();
+
+console.groupCollapsed('Challenge 16 - ProductArray');
+console.log(productArray([3, 2, 1]));
+console.log(productArray([1, 2, 3, 4, 5]));
 console.groupEnd();

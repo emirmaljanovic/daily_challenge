@@ -14,6 +14,7 @@ import kaprekarsConstant from './challenges/kaprekarsConstant';
 import chessboardTraveling from './challenges/chessboardTraveling';
 import sumInArray from './challenges/sumInArray';
 import productArray from './challenges/productArray';
+import { TreeNode, serialize, deserialize } from './challenges/binaryTreeSerializer';
 
 import challenges from './challenges.json';
 
@@ -137,4 +138,11 @@ console.groupEnd();
 console.groupCollapsed('Challenge 16 - ProductArray');
 console.log(productArray([3, 2, 1]));
 console.log(productArray([1, 2, 3, 4, 5]));
+console.groupEnd();
+
+console.groupCollapsed('Challenge 17 - BinaryTree serialize/deserialize');
+const node = new TreeNode('root', new TreeNode('left', new TreeNode('left.left')), new TreeNode('right'));
+console.log(serialize(node));
+console.log(deserialize(serialize(node)));
+console.log(deserialize(serialize(node)).left.left.val === 'left.left');
 console.groupEnd();

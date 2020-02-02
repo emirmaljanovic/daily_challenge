@@ -15,6 +15,7 @@ import chessboardTraveling from './challenges/chessboardTraveling';
 import sumInArray from './challenges/sumInArray';
 import productArray from './challenges/productArray';
 import { TreeNode, serialize, deserialize } from './challenges/binaryTreeSerializer';
+import lowestPositiveInt from './challenges/lowestPositiveInt';
 
 import challenges from './challenges.json';
 
@@ -145,4 +146,10 @@ const node = new TreeNode('root', new TreeNode('left', new TreeNode('left.left')
 console.log(serialize(node));
 console.log(deserialize(serialize(node)));
 console.log(deserialize(serialize(node)).left.left.val === 'left.left');
+console.groupEnd();
+
+console.groupCollapsed('Challenge 18 - lowestPositiveInt');
+console.log(lowestPositiveInt([3, 4, -1, 1]));
+console.log(lowestPositiveInt([1, 2, 0]));
+console.log(lowestPositiveInt([-5, 10, 9, -4, -3, 0, 5, -1, 5, 1, 2, 4, 3, 7, 6, 8]));
 console.groupEnd();

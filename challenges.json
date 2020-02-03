@@ -74,5 +74,9 @@
   {
     "title": "Challenge 19 - carcdrPair",
     "description": "cons(a, b) constructs a pair, and car(pair) and cdr(pair) returns the first and last element of that pair. For example, car(cons(3, 4)) returns 3, and cdr(cons(3, 4)) returns 4. Given this implementation of cons implement car and cdr."
+  },
+  {
+    "title": "Challenge 20 - diagonalDifference",
+    "description": "Given a square matrix, calculate the absolute difference between the sums of its diagonals. It must return an integer representing the absolute diagonal difference. diagonalDifference takes the following parameter: arr: an array of integers. \n Sample input: \n 11 2 4 \n 4 5 6 \n 10 8 -12 \n Sample output: 15"
   }
 ]

@@ -17,6 +17,7 @@ import productArray from './challenges/productArray';
 import { TreeNode, serialize, deserialize } from './challenges/binaryTreeSerializer';
 import lowestPositiveInt from './challenges/lowestPositiveInt';
 import { cons, car, cdr } from './challenges/carCdrPair';
+import diagonalDifference from './challenges/diagonalDifference';
 
 import challenges from './challenges.json';
 
@@ -158,4 +159,9 @@ console.groupEnd();
 console.groupCollapsed('Challenge 19 - carcdrPair');
 console.log(car(cons(3,4)));
 console.log(cdr(cons(3,4)));
+console.groupEnd();
+
+console.groupCollapsed('Challenge 20 - diagonalDifference');
+const matrix = [[11, 2, 4], [4, 5, 6], [10, 8, -12]];
+console.log(diagonalDifference(matrix));
 console.groupEnd();

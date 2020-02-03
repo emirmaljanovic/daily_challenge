@@ -16,6 +16,7 @@ import sumInArray from './challenges/sumInArray';
 import productArray from './challenges/productArray';
 import { TreeNode, serialize, deserialize } from './challenges/binaryTreeSerializer';
 import lowestPositiveInt from './challenges/lowestPositiveInt';
+import { cons, car, cdr } from './challenges/carCdrPair';
 
 import challenges from './challenges.json';
 
@@ -152,4 +153,9 @@ console.groupCollapsed('Challenge 18 - lowestPositiveInt');
 console.log(lowestPositiveInt([3, 4, -1, 1]));
 console.log(lowestPositiveInt([1, 2, 0]));
 console.log(lowestPositiveInt([-5, 10, 9, -4, -3, 0, 5, -1, 5, 1, 2, 4, 3, 7, 6, 8]));
+console.groupEnd();
+
+console.groupCollapsed('Challenge 19 - carcdrPair');
+console.log(car(cons(3,4)));
+console.log(cdr(cons(3,4)));
 console.groupEnd();

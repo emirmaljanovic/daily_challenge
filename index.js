@@ -19,6 +19,7 @@ import lowestPositiveInt from './challenges/lowestPositiveInt';
 import { cons, car, cdr } from './challenges/carCdrPair';
 import diagonalDifference from './challenges/diagonalDifference';
 import minMaxSum from './challenges/minMaxSum';
+import birthdayCakeCandles from './challenges/birthdayCakeCandles';
 
 import challenges from './challenges.json';
 
@@ -169,4 +170,8 @@ console.groupEnd();
 
 console.groupCollapsed('Challenge 21 - minMaxSum');
 console.log(minMaxSum([1, 2, 3, 4, 5]));
+console.groupEnd();
+
+console.groupCollapsed('Challenge 22 - birthdayCakeCandles');
+console.log(birthdayCakeCandles([3, 2, 1, 3]));
 console.groupEnd();

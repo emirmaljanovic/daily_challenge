@@ -78,5 +78,9 @@
   {
     "title": "Challenge 20 - diagonalDifference",
     "description": "Given a square matrix, calculate the absolute difference between the sums of its diagonals. It must return an integer representing the absolute diagonal difference. diagonalDifference takes the following parameter: arr: an array of integers. \n Sample input: \n 11 2 4 \n 4 5 6 \n 10 8 -12 \n Sample output: 15"
+  },
+  {
+    "title": "Challenge 21 - minMaxSum",
+    "description": "Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers. For example, . Our minimum sum is  and our maximum sum is . We would print 16 24"
   }
 ]

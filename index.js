@@ -18,6 +18,7 @@ import { TreeNode, serialize, deserialize } from './challenges/binaryTreeSeriali
 import lowestPositiveInt from './challenges/lowestPositiveInt';
 import { cons, car, cdr } from './challenges/carCdrPair';
 import diagonalDifference from './challenges/diagonalDifference';
+import minMaxSum from './challenges/minMaxSum';
 
 import challenges from './challenges.json';
 
@@ -164,4 +165,8 @@ console.groupEnd();
 console.groupCollapsed('Challenge 20 - diagonalDifference');
 const matrix = [[11, 2, 4], [4, 5, 6], [10, 8, -12]];
 console.log(diagonalDifference(matrix));
+console.groupEnd();
+
+console.groupCollapsed('Challenge 21 - minMaxSum');
+console.log(minMaxSum([1, 2, 3, 4, 5]));
 console.groupEnd();

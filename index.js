@@ -21,6 +21,7 @@ import diagonalDifference from './challenges/diagonalDifference';
 import minMaxSum from './challenges/minMaxSum';
 import birthdayCakeCandles from './challenges/birthdayCakeCandles';
 import largestSumNonAdjacentNumbers from './challenges/largestNonAdjSum';
+import scheduler from './challenges/scheduler';
 
 import challenges from './challenges.json';
 
@@ -180,4 +181,14 @@ console.groupEnd();
 console.groupCollapsed('Challenge 23 - largestNonAdjacentSum');
 console.log(largestSumNonAdjacentNumbers([2, 4, 6, 2, 5]));
 console.log(largestSumNonAdjacentNumbers([5, 1, 1, 5]));
+console.groupEnd();
+
+console.groupCollapsed('Challenge 24 - scheduler');
+const print = () => {
+  const obj = { a: 'a' };
+  
+  console.log(obj.a, this);
+};
+
+scheduler(print, 500);
 console.groupEnd();

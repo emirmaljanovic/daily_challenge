@@ -22,6 +22,7 @@ import minMaxSum from './challenges/minMaxSum';
 import birthdayCakeCandles from './challenges/birthdayCakeCandles';
 import largestSumNonAdjacentNumbers from './challenges/largestNonAdjSum';
 import scheduler from './challenges/scheduler';
+import autocomplete from './challenges/autocomplete';
 
 import challenges from './challenges.json';
 
@@ -191,4 +192,8 @@ const print = () => {
 };
 
 scheduler(print, 500);
+console.groupEnd();
+
+console.groupCollapsed('Challenge 25 - autocomplete');
+console.log(autocomplete('de', ['dog', 'deer', 'deal']));
 console.groupEnd();
